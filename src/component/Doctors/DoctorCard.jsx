@@ -29,7 +29,7 @@ export default function DoctorCard({name,specialty,experience,image}){
                         <h5>{specialty}</h5>
                         <h6>Experience : {experience}</h6>
                         <h5>Fee: 500</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor saepe aliquid qui cum enim quas quaerat sapiente vitae ex commodi labore error eaque ad ipsum in repudiandae, corporis esse.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor saepe aliquid qui cum enim quas .</p>
                         <BookAppointment  name="Book Appointment"/>
                     </div>
                 </div>
