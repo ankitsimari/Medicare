@@ -74,14 +74,4 @@ To get started with using the MediCare platform, follow these steps:
 2. **Doctor Profiles:** Patients can explore doctor profiles to learn more about their specialization and experience.
 3. **Video Calls:** Patients and doctors can have secure and private video consultations.
 
-## Contributing
 
-We welcome contributions from the community. If you're interested in contributing to the MediCare platform, please read our [Contribution Guidelines](CONTRIBUTING.md).
-
-## Support
-
-If you encounter any issues or have questions, please visit our [Support Page](https://medicare-support.example.com) or contact our support team at support@medicare.example.com.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
