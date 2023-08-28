@@ -40,7 +40,7 @@ export default function User() {
       <List>
         {[<h5 className='m-0'>Name: {data.firstName} {data.lastName} </h5>, <h5 >Email : {data.email}</h5>, 
         <h5 className='m-0'>Booking: {booking?<div>
-          <p>Session Id : "http://localhost:3000/videoRoom/Ankit?roomID=Ankit"</p>
+          <p>Session Id : "https://teal-board-7169-ankit-doc-web.vercel.app/videoRoom/Ankit?roomID=Ankit"</p>
         </div>:"No"}</h5>, ].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>

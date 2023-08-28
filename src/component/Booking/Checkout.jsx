@@ -104,7 +104,7 @@ const[loading,setLoading]= React.useState(false)
                 Thank you for your Booking.
               </Typography>
               <Typography variant="subtitle1">
-                Your order number is #2001539. and Session Id is"http://localhost:3000/videoRoom/Ankit?roomID=Ankit"
+                Your order number is #2001539. and Session Id : "https://teal-board-7169-ankit-doc-web.vercel.app/videoRoom/Ankit?roomID=Ankit"
               </Typography>
             </React.Fragment>
           ) : (
