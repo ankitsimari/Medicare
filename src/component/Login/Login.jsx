@@ -12,11 +12,16 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useReducer ,useState , useContext} from "react";
+import { useState , useContext} from "react";
 import { AuthContext } from "../AuthContext/AuthContext";
 import {useNavigate} from "react-router-dom"
+import axios from "axios"
+import Swal from 'sweetalert2'
+import { useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-// TODO remove, this demo shouldn't need to reset the theme.
+
 
 const defaultTheme = createTheme();
 
@@ -34,6 +39,10 @@ export default function LogIn() {
   const [password, setPassword] = useState("");
   const [data, setData] = useState([]);
 
+
+
+
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "email") {
@@ -48,33 +57,62 @@ export default function LogIn() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
-      let res = await fetch(`https://doctors-api-bc6x.onrender.com/user`);
-      let resp = await res.json();
-      setData(resp);
-
-      const user = data.filter((e)=>{
-        return e.email==email&&e.password==password
-      })
-
-      if (user.length) {
+      const response = await axios.get(
+        `https://doctors-api-bc6x.onrender.com/user?email_like=${email}`
+      );
+  
+      const responseData = response.data;
+  
+      if (responseData.length > 0 && responseData[0].email === email) {
         setIsAuth(true);
-        alert("Login successful!");
-        setEmail("")
-        setPassword("")
-        Navigate("/")
+
+        Swal.fire({
+          title: 'Login Successful',
+          text: 'You are Logged in Successfully!',
+          icon: 'success', // Set the icon to 'success'
+          confirmButtonColor: '#3167D9'
+        });
+        localStorage.setItem("user", JSON.stringify(responseData[0]));
+  
+        setEmail("");
+        setPassword("");
+        if(email=="admin@gmail.com"){
+          Navigate("/dashboard");
+        }else{
+
+          Navigate("/");
+        }
       } else {
-        alert("Invalid credentials");
+        Swal.fire({
+          title: 'Wrong Credential',
+          text: 'Enter Correct Credential',
+          icon: 'error',
+          confirmButtonColor: '#3167D9'
+        })
       }
-    } catch (err) {
-      console.log("Error fetching data:", err);
+    } catch (error) {
+      console.error(error);
+      Swal.fire({
+        title: 'Error',
+        text: "An error occurred while logging in",
+        icon: 'error',
+        confirmButtonColor: '#3167D9'
+      })
     }
   };
+
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+  
+
   return (
     <div>
       <ThemeProvider theme={defaultTheme}>
-        <Container component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs" data-aos="fade-up">
           <CssBaseline />
           <Box
             sx={{
@@ -136,6 +174,7 @@ export default function LogIn() {
               >
                 Sign In
               </Button>
+              
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">
@@ -143,7 +182,7 @@ export default function LogIn() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
+                  <Link href="/signUp" variant="body2">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

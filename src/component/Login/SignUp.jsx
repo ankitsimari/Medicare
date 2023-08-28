@@ -13,7 +13,9 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useReducer } from "react";
-
+import { useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const defaultTheme = createTheme();
@@ -104,9 +106,13 @@ console.log(state)
     });
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" data-aos="fade-up">
         <CssBaseline />
         <Box
           sx={{
@@ -199,7 +205,7 @@ console.log(state)
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link className="themeColor" href="/login" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>

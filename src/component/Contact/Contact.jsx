@@ -13,6 +13,9 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useReducer } from "react";
+import { useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const defaultTheme = createTheme();
 
@@ -39,23 +42,6 @@ export default function Contact() {
   }
 
   const [state, dispatch] = useReducer(reducer, initialState);
-  // console.log(state); 
-
-  // async function postData() {
-  //   try {
-  //     let res = await fetch(`https://doctors-api-bc6x.onrender.com/contact`, {
-        // method: "POST",
-        // body: state, // Assuming 'state' is defined somewhere in your code
-        // headers: {
-        //   "Content-type": "application/json"
-  //       }
-  //     });
-  //     let resp = await res.json();
-  //   } catch (err) {
-  //     console.error("Error in posting data", err);
-  //   }
-  // }
-  
 
   function postData() {
     console.log(state);
@@ -91,11 +77,16 @@ export default function Contact() {
     });
   };
 
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const { firstName, lastName, email, message } = state;
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" data-aos="fade-up">
         <CssBaseline />
         <Box
           sx={{
@@ -103,6 +94,7 @@ export default function Contact() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -184,7 +176,7 @@ export default function Contact() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Submit
             </Button>
           </Box>
         </Box>
