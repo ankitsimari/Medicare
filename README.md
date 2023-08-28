@@ -24,6 +24,8 @@ Welcome to the **MediCare** Doctors Appointment Booking Website! This platform a
 
 MediCare is an online platform designed to simplify the process of booking appointments with doctors. Our website aims to bridge the gap between patients and healthcare providers, offering a user-friendly experience for all.
 
+![MediCare](https://ibb.co/mC8s1Z1)
+
 ## Features
 
 ### User Authentication
