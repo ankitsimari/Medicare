@@ -76,7 +76,7 @@ console.log(select)
 
   return (
     <>
-      <span className="d-flex ms-md-5 mb-3 ps-md-5" data-aos="fade-up">
+      <span className="d-flex ms-md-5 mb-3 ps-md-5" data-aos="">
         
 
       <TextField
