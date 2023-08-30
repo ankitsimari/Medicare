@@ -82,9 +82,5 @@ We welcome contributions from the community. If you're interested in contributin
 
 ![MediCare](https://imgtr.ee/images/2023/08/28/c91e40c7372c3e717c2abce4dcf2dd3c.png)
 
-## Support
 
-If you encounter any issues or have questions, please visit our [Support Page](https://medicare-support.example.com) or contact our support team at support@medicare.example.com.
-
-## License
 
