@@ -24,6 +24,8 @@ Welcome to the **MediCare** Doctors Appointment Booking Website! This platform a
 
 MediCare is an online platform designed to simplify the process of booking appointments with doctors. Our website aims to bridge the gap between patients and healthcare providers, offering a user-friendly experience for all.
 
+![MediCare](https://imgtr.ee/images/2023/08/28/8ffd00ca942b5997eb4872d8675104be.png)
+
 ## Features
 
 ### User Authentication
@@ -33,27 +35,27 @@ To ensure the security and privacy of users' personal information, MediCare prov
 ### SignUp
 
 New users can create accounts through the signup page. They are prompted to provide essential information such as their name, email address, and a secure password. This information is securely stored and used for future logins and appointment management.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/9bbdf832e129b833ab6229ea991219c0.png)
 ### Login
 
 Returning users can log in using their registered email and password. Once logged in, they gain access to the appointment booking system and can manage their appointments effectively.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/9bc277a5873fc1fdb534e2e174678250.png)
 ### Appointment Booking
 
 MediCare allows users to browse through a list of available doctors, view their profiles, and select a suitable time slot for an appointment. This feature helps patients find the right doctor and schedule appointments at their convenience.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/c91e40c7372c3e717c2abce4dcf2dd3c.png)
 ### Video Call
 
 In this age of digital communication, video calls with doctors can provide an alternative to in-person visits. MediCare integrates a video call feature that enables patients and doctors to connect virtually for consultations, providing medical advice, and discussing treatment plans.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/456b9e2763d796f56684fb332f3c339c.png)
 ### Admin Page
 
 For administrative purposes, an admin page is available to authorized personnel.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/6e4fe1521235b79354dfa7144cdeae23.png)
 #### Add Doctor
 
 Authorized administrators can add new doctors to the system. This includes providing details such as the doctor's name, specialization, contact information, and availability.
-
+![MediCare](https://imgtr.ee/images/2023/08/28/5ad47f6109ef5ee52868438c9f6dc1fe.png)
 #### Delete Doctor
 
 Admins also have the authority to remove doctors from the system if necessary. This ensures an up-to-date and accurate list of available healthcare providers.
@@ -86,4 +88,3 @@ If you encounter any issues or have questions, please visit our [Support Page](h
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
