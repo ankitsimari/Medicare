@@ -25,7 +25,7 @@ export default function Timeline(){
               <span className="date">January 2021</span>
               <span className="circle"></span>
             </li>
-            <li data-aos="fade-up">
+            <li >
               <h3 className="heading">Doctor</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
@@ -45,7 +45,7 @@ export default function Timeline(){
               <span className="date">March 2021</span>
               <span className="circle "></span>
             </li>
-            <li data-aos="fade-up">
+            <li >
               <h3 className="heading">Doctor</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit

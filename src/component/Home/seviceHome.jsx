@@ -20,7 +20,7 @@ export default function ServiceHome() {
             <div className="row themeBg rounded">
               <div
                 className="col-md-4 card themeBg p-4 py-5 border-0 text-center"
-                data-aos="fade-right"
+                data-aos="fade-up"
               >
                 <div className="themeBg ">
                   <img
@@ -62,7 +62,7 @@ export default function ServiceHome() {
 
               <div
                 className="col-md-4 card themeBg p-4 py-5 border-0 text-center"
-                data-aos="fade-left"
+                data-aos="fade-up"
               >
                 <div className="themeBg ">
                   <img
@@ -87,12 +87,12 @@ export default function ServiceHome() {
 
       <div className="container mt-5 pt-5  ">
         <div className="row ">
-          <div className="col-md-6 " data-aos="fade-right">
+          <div className="col-md-6 " data-aos="fade-up">
             <img className="ms-md-4 ps-2 w-100" src={serviceImg} alt="" />
           </div>
           <div
             className="col-md-6 mt-md-5 pt-md-5 ps-md-5 marginZero"
-            data-aos="fade-left"
+            data-aos="fade-up"
           >
             <h2 className="mt-md-3">
               Ready to be <span className="themeColor">Healthy</span>

@@ -17,7 +17,7 @@ export default function Accordion(){
 
 <div class="accordion accordion-flush m-auto mt-5 pt-md-5" style={{width:"83%"}}  id="accordionFlushExample">
 <h2 className="text-center mb-4 pb-2">Frequently Asked <span className="themeColor">Questions</span></h2>
-  <div class="accordion-item" data-aos="fade-right">
+  <div class="accordion-item" data-aos="fade-up">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Accordion Item #1
@@ -27,7 +27,7 @@ export default function Accordion(){
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
     </div>
   </div>
-  <div class="accordion-item" data-aos="fade-left">
+  <div class="accordion-item" data-aos="fade-up">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
         Accordion Item #2

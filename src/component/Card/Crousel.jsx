@@ -34,7 +34,7 @@ export default function Crousel(){
                             <div className="row">
 
                                 <div className="col-md-4 mb-3">
-                                    <div className="card border-0 shadow" data-aos="fade-right">
+                                    <div className="card border-0 shadow" data-aos="fade-up">
                                         <img className="img-fluid" alt="100%x280" src="https://media.istockphoto.com/id/1470505351/photo/portrait-of-a-smiling-doctor-holding-glasses-and-a-mobile-phone-at-the-office.webp?b=1&s=170667a&w=0&k=20&c=8CebFLF4PFnt9JYJznGhYoOQxcyHLVpTGVfkvEsZd2Q="/>
                                         <div className="card-body">
                                             <h4 className="card-title">Cardiology specialist</h4>
@@ -55,7 +55,7 @@ export default function Crousel(){
                                     </div>
                                 </div>
                                 <div className="col-md-4 mb-3">
-                                    <div className="card border-0 shadow rounded" data-aos="fade-left">
+                                    <div className="card border-0 shadow rounded" data-aos="fade-up">
                                         <img className="img-fluid" alt="100%x280" src="https://media.istockphoto.com/id/638647058/photo/we-offer-our-patients-premium-healthcare-here.jpg?s=612x612&w=0&k=20&c=pek5ehwgsZNPemeEh4bObQ1U5DRPEs0WHleosG-daa8="/>
                                         <div className="card-body">
                                             <h4 className="card-title">Dermatology specialist</h4>

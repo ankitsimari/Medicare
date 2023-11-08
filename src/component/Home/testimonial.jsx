@@ -55,7 +55,7 @@ let arr = [
                 src={arr[page].Image}
                 alt=""
               />
-              <p className="themeBg m-2 ms-4" data-aos="fade-left">
+              <p className="themeBg m-2 ms-4" data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Repellendus, a beatae. Mollitia est exercitationem totam debitis
                 facere velit deserunt rem fuga sequi cumque blanditiis eveniet
@@ -66,7 +66,7 @@ let arr = [
               <div className="border w-50 d-block m-auto "> </div>
               <h3
                 className="themeBg float-end me-md-5 pe-5"
-                data-aos="fade-right "
+                data-aos="fade-up"
               >
                 lorem
               </h3>
